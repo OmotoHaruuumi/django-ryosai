@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+
+{% block main %}
+    {% for post in object_list %}
+    <li><a><p><font color="#35e888">タイトルまたはニックネーム</font></p>
+    <p>{{ post.title}}({{post.category}})</p>
+    <p><font color="#35e888">本文</font></p>
+    <p>{{post.body}}</p></a></li>
+    <br><br>
+    {% endfor %}
+{% endblock %}
