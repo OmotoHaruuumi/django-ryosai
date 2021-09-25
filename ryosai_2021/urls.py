@@ -1,7 +1,7 @@
 
 from django.urls import path
 
-from .views import IndexView, CreateView , TwentysixView
+from .views import IndexView, CreateView , TwentysixView , ListView
 
 from . import views
 
@@ -10,6 +10,8 @@ urlpatterns = [
     path('',IndexView.as_view(), ),
     
     path('',CreateView.as_view(),),
+    
+    path('',ListView.as_view(),),
 
     path('', views.Index.as_view(), name="list"),
     
