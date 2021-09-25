@@ -8,6 +8,7 @@ from . import views
 
 urlpatterns = [
     path('',IndexView.as_view(), ),
+    
     path('',CreateView.as_view(),),
 
     path('', views.Index.as_view(), name="list"),
