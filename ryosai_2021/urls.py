@@ -1,21 +1,15 @@
 
 from django.urls import path
 
-from .views import IndexView, CreateView , TwentysixView , ListView
-
+from .views import Create , TwentysixView , Index
 from . import views
 
 
 urlpatterns = [
-    path('',IndexView.as_view(), ),
     
-    path('',CreateView.as_view(),),
+    path('',Index.as_view(), name="list"),
     
-    path('',ListView.as_view(),),
-
-    path('', views.Index.as_view(), name="list"),
-    
-    path('create/', views.Create.as_view(), name="create"),
+    path('create/',views.Create.as_view(), name="create"),
    
     path('1126/',TwentysixView.as_view(), name="1126"),
 ]
