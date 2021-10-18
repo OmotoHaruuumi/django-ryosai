@@ -58,3 +58,18 @@ class Post(models.Model):
         return self.title
     
     
+class Pro1126(models.Model):
+   name = models.CharField(
+        max_length=50,
+        blank=False,
+        null=True)
+   
+   body = models.CharField(
+        max_length=100,
+        blank=False,
+        null=True)
+    
+   image = models.ImageField(upload_to='images/')
+
+   def __str__(self):
+        return self.name

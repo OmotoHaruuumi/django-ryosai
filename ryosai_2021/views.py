@@ -1,6 +1,6 @@
 
 
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView 
 from .models import Post
 
 
@@ -28,4 +28,5 @@ class Create(CreateView):
     fields = ["title", "body", "category"]
     success_url = reverse_lazy('list')
     
+
 
