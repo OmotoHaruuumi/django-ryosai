@@ -6,6 +6,15 @@ from .models import Post
 
 class TwentysixView(TemplateView):
     template_name = "1126.html"
+    
+class TwentysevenView(TemplateView):
+    template_name = "1127.html"
+
+class TwentyeightView(TemplateView):
+    template_name = "1128.html"
+    
+class TwentynineView(TemplateView):
+    template_name = "1129.html"
 
 from django.views.generic import ListView
 

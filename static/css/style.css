@@ -568,9 +568,7 @@ table td {/*table内のtdに対して*/
   text-align: center;
 }
   
-table tr:nth-child(even) {
-    background:#808080;
-}
+
 
 table td:nth-of-type(1){
      background:#5f9ea0;
@@ -588,7 +586,10 @@ table, td, th { border: 2px #5f9ea0 solid; }
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-
+.column{
+margin-top: 30px;
+padding: 30px;
+}
 
 /*--------------------------------------------------------------
 # Portfolio
