@@ -18,6 +18,9 @@ class TwentynineView(TemplateView):
 
 class ThirtyView(TemplateView):
     template_name = "1130.html"
+
+class ThirtyoneView(TemplateView):
+    template_name = "1131.html"
 from django.views.generic import ListView
 
 # ListViewは一覧を簡単に作るためのView
