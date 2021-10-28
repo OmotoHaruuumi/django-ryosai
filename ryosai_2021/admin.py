@@ -16,3 +16,6 @@ class TagAdmin(admin.ModelAdmin):
 class PostAdmin(admin.ModelAdmin):
     pass
 
+@admin.register(models.Pro)
+class ProAdmin(admin.ModelAdmin):
+    pass

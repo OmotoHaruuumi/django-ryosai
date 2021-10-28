@@ -58,7 +58,7 @@ class Post(models.Model):
         return self.title
     
     
-class Pro1126(models.Model):
+class Pro(models.Model):
    name = models.CharField(
         max_length=50,
         blank=False,
@@ -69,6 +69,11 @@ class Pro1126(models.Model):
         blank=False,
         null=True)
     
+   place = models.CharField(
+        max_length=50,
+        blank=False,
+        null=True)
+   
    image = models.ImageField(upload_to='images/')
 
    def __str__(self):
