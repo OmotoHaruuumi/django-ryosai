@@ -9,3 +9,20 @@
     <br><br>
     {% endfor %}
 {% endblock %}
+
+
+
+
+{% block content_block %}
+    {%for pro in tag_list %}
+    <div class="col-lg-4">
+        <div class="card text-white bg-primary mb-3">
+          <img class="card-img-top" src={{pro.image.url}} alt="フットサルのイメージ画像">
+          <div class="card-body">
+            <h4 class="card-title">{{pro.name}}</h4>
+            <p class="card-text">{{pro.body}}<p>場所：{{pro.place}}</p></p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+{% endblock %}

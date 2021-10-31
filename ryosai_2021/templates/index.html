@@ -43,7 +43,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link active" href="#header">ホーム</a></li>
-          <li><a class="nav-link" href="#services">お知らせ</a></li>
+          <li><a class="nav-link" href="#services">お知らせ・コラム</a></li>
           <li><a class="nav-link" href="#about">企画</a></li>
           <li><a class="nav-link" href="#resume">スケジュール</a></li>
           <li><a class="nav-link" href="#portfolio">スポンサー</a></li>
@@ -110,6 +110,9 @@
   
   　　　<div>
      <h2>１１月２７日の企画</h2>
+      <div class="row">
+     {% block content_block %}
+      {% endblock %}
  
      
     </div>
@@ -136,6 +139,8 @@
      <p><a href="#1203">１２月３日のスケジュールを見る</a></p>
      <p><a href="#1204">１２月４日のスケジュールを見る</a></p>
      <p><a href="#1205">１２月５日のスケジュールを見る</a></p>
+     <p><a href="#always">常設イベントを見る</a></p>
+     <p><a href="#guerrilla">ゲリライベントを見る</a></p>
      </div>
    </div>    
   
@@ -306,33 +311,32 @@
     <div class="table-responsive">
     <h2 id="1201"><font color="white">１２月１日(水)</font></h2>
     <table class="text-nowrap" border="1">
-     <tr><th colspan="6">12月1日(水)</th></td>
+     <tr><th colspan="9">12月1日(水)</th></td>
     </tr><br>
-    <tr><td >1:00</td><td>日程がきまりしだい</td><td>順次</td><td>企画名と</td><td>場所を</td><td>書いていきます</td></tr>
-    <tr><td >2:00</td><td rowspan="3"></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >3:00</td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >4:00</td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >5:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >6:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >7:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >8:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >9:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >10:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >0:00</td><td rowspan="10">新興宗教ラリー</td><td colspan="3">三里塚闘争DVD上映会</td><td></td><td><td></td></td><td rowspan="21">自治</td></tr>
+    <tr><td >1:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >2:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >3:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >4:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >5:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >6:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >7:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >8:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >9:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >10:00</td><td></td><td></td><td></td><td colspan="2" rowspan="6">焼き畑</td><td></td><td></td></tr>
     <tr><td >11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
     <tr><td >12:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >13:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >14:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td>15:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >16:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >17:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >18:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >19:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >20:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >21:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >22:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >23:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >24:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >1:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >13:00</td><td></td><td colspan="2" rowspan="6">スポーツ大会</td><td colspan="2" rowspan="2">ドッグフード早食い対決</td></tr>
+    <tr><td >14:00</td><td></td></tr>
+    <tr><td>15:00</td><td></td><td></td><td rowspan="9">足湯を作ろう</td></tr>
+    <tr><td >16:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >17:00</td><td rowspan="2">ビジネス語・ゲバルト語検定</td><td></td><td></td><td></td></tr>
+    <tr><td >18:00</td><td rowspan="2">育毛脱毛体験</td><td rowspan="5">恋アス上映会</td><td></td></tr>
+    <tr><td >19:00</td><td>マイナンバーヌメロン</td><td rowspan="2">速記・プログラミング大会</td><td rowspan="2">朗読会</td><td rowspan="5">中核的交流施設熊野倶楽部</td></tr>
+    <tr><td >20:00</td><td></td><td></td></tr>
+    <tr><td >21:00</td><td rowspan="2">ハマグリのガソリン焼き</td><td colspan="2" rowspan="3">安部公房コンパ</td><td rowspan="3">Bumpコンパ</td><td>ソビエト戦争映画１５耐久上映</td></tr>
+    <tr><td >22:00</td><td></td></tr>
+    <tr><td >23:00</td><td></td><td></td><td></td></tr>
    </table><br>
     </div>
     
@@ -340,33 +344,32 @@
   　　<div class="table-responsive">
     <h2 id="1202"><font color="white">１２月２日(木)</font></h2>
     <table class="text-nowrap" border="1">
-     <tr><th colspan="6">12月2日(木)</th></td>
+     <tr><th colspan="11">12月2日(木)</th></td>
     </tr><br>
-    <tr><td >1:00</td><td>日程がきまりしだい</td><td>順次</td><td>企画名と</td><td>場所を</td><td>書いていきます</td></tr>
-    <tr><td >2:00</td><td rowspan="3"></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >3:00</td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >4:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >0:00</td><td colspan="3" rowspan="2">夢を捨て去る像</td><td rowspan="6">中核的交流施設熊野倶楽部</td><td rowspan="13">無限ランダムウォーク</td><td></td><td></td><td rowspan="24"><p>小出休み無し</p><p>9:00~16:00 釣りプロ小出の釣り教室</p><p>17:00~18:00 小出しまわたり</p><p>18:00~20:00 対小出大喜利選挙権</p><p>20:00~22:00 小出を囲う会</p><p>22:00~24:00 小出外企画</p></td><td rowspan="10">足湯を作ろう</td></tr>
+    <tr><td >1:00</td><td></td><td></td></tr>
+    <tr><td >2:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >3:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >4:00</td><td></td><td></td><td></td><td></td><td></td></tr>
     <tr><td >5:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >6:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >7:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >8:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >9:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >10:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >12:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >13:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >14:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td>15:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >16:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >17:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >18:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >19:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >20:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >21:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >22:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >23:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >24:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >1:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >6:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >7:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >8:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >9:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >10:00</td><td colspan="3" rowspan="3">みかん祭り</td><td rowspan="5">衣笠解放区</td><td></td><td></td><td></td></tr>
+    <tr><td >11:00</td><td></td><td></td><td></td></tr>
+    <tr><td >12:00</td><td rowspan="3">食べるの遅い人コンパ</td><td>食べるの早い人コンパ</td><td></td></tr>
+    <tr><td >13:00</td><td rowspan="2" colspan="2">バカ短歌会</td><td rowspan="2">市バス乗り継ぎ</td><td></td><td></td><td></td></tr>
+    <tr><td >14:00</td><td></td><td></td><td></td></tr>
+    <tr><td >15:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >16:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td rowspan="8">24時間はかれ</td></tr>
+    <tr><td >17:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >18:00</td><td rowspan="4">巨大折り紙</td><td rowspan="2">ヴィンテージを作ろう</td><td rowspan="3">ヒーリングアニメ上映会</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >19:00</td><td rowspan="3">全体</td><td rowspan="3">斉藤幸平ゼミと団結</td><td></td><td></td></tr>
+    <tr><td >20:00</td><td rowspan="2">親の学歴選手権</td><td rowspan="2">模擬団交</td><td></td></tr>
+    <tr><td >21:00</td><td rowspan="3">千葉県民コンパ</td><td rowspan="2">異世界居酒屋「のぶ」コンパ</td></tr>
+    <tr><td >22:00</td><td rowspan="2">〇〇派と見るワンピース</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >23:00</td><td>闇鍋・光鍋</td><td></td><td></td><td></td><td></td></tr>
    </table><br>
     </div>
 
@@ -376,31 +379,30 @@
     <table class="text-nowrap" border="1">
      <tr><th colspan="6">12月3日(金)</th></td>
     </tr><br>
-    <tr><td >1:00</td><td>日程がきまりしだい</td><td>順次</td><td>企画名と</td><td>場所を</td><td>書いていきます</td></tr>
-    <tr><td >2:00</td><td rowspan="3"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >0:00</td><td></td><td></td><td></td><td></td><td rowspan="17">24時間はかれ</td></tr>
+    <tr><td >1:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >2:00</td><td></td><td></td><td></td><td></td></tr>
     <tr><td >3:00</td><td></td><td></td><td></td><td></td></tr>
     <tr><td >4:00</td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >5:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >6:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >7:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >8:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >9:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >10:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >12:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >13:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >14:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td>15:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >16:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >17:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >18:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >19:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >20:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >21:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >22:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >23:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >24:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >1:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >5:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >6:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >7:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >8:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >9:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >10:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >11:00</td><td colspan="3" rowspan="7">寮祭ライブ@音楽室</td></tr>
+    <tr><td >12:00</td><td rowspan="2">ダサい食事会（林）<p>ダサい食事会（藤津）</p></td></tr>
+    <tr><td >13:00</td></tr>
+    <tr><td >14:00</td><td></td></tr>
+    <tr><td >15:00</td><td></td></tr>
+    <tr><td >16:00</td><td></td></tr>
+    <tr><td >17:00</td><td></td><td></td></tr>
+    <tr><td >18:00</td><td colspan="4" rowspan="9">全寮コンパ<p>女児コンパ、みんなのうぇぶて、矛盾RTA</p><p>なぜ人間は主語を大きくするのか、自首、うちわ職人</p><p>Ng測れ（発表）、寮食クイズ（発表）、利き水２</p><p>☆ファミマと連帯☆</p><p>山下追いコン・おつコン、熊野フォトコンテスト</p><p>シャンパンタワー、俺たちのファーストテイク、スマホ捜索</p></td><td></td></tr>
+    <tr><td >19:00</td><td></td></tr>
+    <tr><td >20:00</td><td></td></tr>
+    <tr><td >21:00</td><td rowspan="3"><p>耐久カタン</p><p>耐久ドミニオン</p><p>無限ポテト</p></td></tr>
+    <tr><td >22:00</td></tr>
+    <tr><td >23:00</td></tr>
    </table><br>
     </div>
 
@@ -408,33 +410,32 @@
 　　　<div class="table-responsive">
     <h2 id="1204"><font color="white">１２月４日(土)</font></h2>
     <table class="text-nowrap" border="1">
-     <tr><th colspan="6">12月4日(土)</th></td>
+     <tr><th colspan="7">12月4日(土)</th></td>
     </tr><br>
-    <tr><td >1:00</td><td>日程がきまりしだい</td><td>順次</td><td>企画名と</td><td>場所を</td><td>書いていきます</td></tr>
-    <tr><td >2:00</td><td rowspan="3"></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >3:00</td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >4:00</td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >5:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >6:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >7:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >8:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >9:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >10:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >12:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >13:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >14:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td>15:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >16:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >0:00</td><td colspan="3" rowspan="5"><p>耐久カタン</p><p>耐久ドミニオン</p><p>無限ポテト</p></td><td></td><td></td><td></td></tr>
+    <tr><td >1:00</td><td></td><td></td><td></td></tr>
+    <tr><td >2:00</td><td></td><td></td><td></td></tr>
+    <tr><td >3:00</td><td></td><td></td><td></td></tr>
+    <tr><td >4:00</td><td></td><td></td><td></td></tr>
+    <tr><td >5:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >6:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >7:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >8:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >9:00</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >10:00</td><td>学校へ行こう@熊野寮</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >11:00</td><td colspan="2" rowspan="6">寮祭ライブ@食堂</td><td colspan="3" rowspan="3">鴨川いかだレース</td><td rowspan="2">鴨川砂金取り</td></tr>
+    <tr><td >12:00</td></tr>
+    <tr><td >13:00</td><td></td></tr>
+    <tr><td >14:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >15:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >16:00</td><td></td><td></td><td rowspan="4">宝塚メイク</td><td></td></tr>
     <tr><td >17:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >18:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >19:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >18:00</td><td></td><td></td><td></td><td></td><td rowspan="4">他人任せ回転ずし</td></tr>
+    <tr><td >19:00</td><td colspan="3">京都駅大階段グリコ</td><td>日体大コール</td></tr>
     <tr><td >20:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >21:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >22:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >23:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >24:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >1:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >21:00</td><td rowspan="3">テラフォ</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >22:00</td><td rowspan="2" colspan="2">LAMUvs成城石井コンパ</td><td rowspan="2" colspan="2">スピッツコンパ</td><td rowspan="2">自粛</td></tr>
+    <tr><td >23:00</td></tr>
    </table><br>
     </div>
     
@@ -444,35 +445,71 @@
     <table class="text-nowrap" border="1">
      <tr><th colspan="6">12月5日(日)</th></td>
     </tr><br>
-    <tr><td >1:00</td><td>日程がきまりしだい</td><td>順次</td><td>企画名と</td><td>場所を</td><td>書いていきます</td></tr>
-    <tr><td >2:00</td><td rowspan="3"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >0:00</td><td></td><td></td><td rowspan="13">Film fair(映画祭)</td><td rowspan="2">自粛</td><td>ムーンショット目標</td></tr>
+    <tr><td >1:00</td><td></td><td></td><td></td></tr>
+    <tr><td >2:00</td><td></td><td></td><td></td><td></td></tr>
     <tr><td >3:00</td><td></td><td></td><td></td><td></td></tr>
     <tr><td >4:00</td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >5:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >6:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >7:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >8:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >9:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >10:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >12:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >13:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >14:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td>15:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >16:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >17:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >18:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >19:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >20:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >21:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >22:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >23:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >24:00</td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td >1:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >5:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >6:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >7:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >8:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >9:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >10:00</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td >11:00</td><td rowspan="9">寮祭ライブ@食堂</td><td rowspan="3">crepes shop</td><td rowspan="2">樹木観察会</td><td rowspan="2">アビスめし</td></tr>
+    <tr><td >12:00</td></tr>
+    <tr><td >13:00</td><td rowspan="5">占いvs占い</td><td></td><td></td></tr>
+    <tr><td >14:00</td><td></td><td></td><td></td></tr>
+    <tr><td >15:00</td><td></td><td></td><td></td></tr>
+    <tr><td >16:00</td><td></td><td></td><td></td></tr>
+    <tr><td >17:00</td><td></td><td></td><td></td></tr>
+    <tr><td >18:00</td><td></td><td></td><td rowspan="4">金融資本家コンパ</td><td></td></tr>
+    <tr><td >19:00</td><td></td><td></td><td></td></tr>
+    <tr><td >20:00</td><td colspan="3" rowspan="4">ファイヤーストーム</td><td>合唱コンクール</td></tr>
+    <tr><td >21:00</td><td></td></tr>
+    <tr><td >22:00</td><td></td><td></td></tr>
+    <tr><td >23:00</td><td></td><td></td></tr>
    </table><br>
     </div>
 
-
+   <div class="table-responsive">
+    <h2 id="always"><font color="white">常設イベント</font></h2>
+     <table class="text-nowrap">
+     <tr><th colspan="6">常設イベント</th></td>
+    </tr><br>
+    <tr><td></td><td>あたたまり屋</td>　<td>BarKUMA</td> <td>承認欲求を満たす</td>　<td>平安湯と連帯</td>　<td>喫煙可能店マップ</td></tr>
+    <tr><td></td><td>追憶</td>　<td>民青池を見ない会</td>　<td>スタンプチャット</td>　<td>日焼けマシン</td>　<td>ドレッシング祭り</td></tr>　　
+    <tr><td></td><td>A4談話室に来よう！</td>　<td>左　</td><td>全体</td>　<td>小出募金</td> <td>三里塚野菜市</td></tr>　
+    <tr><td></td><td>くまけん・こいけん</td>　<td>ベスト外歌選手権</td>　<td>安波休みな</td> <td>小出どっきり</td>　<td>寮生シャッフル</td></tr>　
+    <tr><td></td><td>公安のスパイを探せ生ハム原木</td>　<td>お手軽に神になろう</td>　<td>手動販売人</td>　<td>TOEIC団体受験★９００突破チャレンジ</td><td>祝日制定</td></tr>　
+    <tr><td></td><td>推しを推そう☆</td>　<td>KUMANO ADVENTCALENDER</td>　<td>ドキドキ！シール集め</td>　<td>謎解き</td> <td>人類猫化計画</td></tr>
+    <tr><td></td><td>QWOPトライアスロン</td>　<td>びゃんの字になって寝よう</td>　<td>ラマダン（煙草)</td>　<td>右</td><td>熊野杯</td></tr>　
+    <tr><td></td><td>昼寝</td>　<td>すき家VS松屋VS吉野家VSなか卵</td> <td></td><td></td><td></td></tr>
+    </table><br>
+    </div>
+   
+   
+   <div class="table-responsive">
+    <h2 id="guerrilla"><font color="white">ゲリライベント</font></h2>
+     <table class="text-nowrap">
+     <tr><th colspan="6">ゲリライベント</th></td>
+    </tr><br>
+   　<tr><td></td><td>自販機契約</td>　<td>おそうじ</td>　<td>SDGs</td>　<td>シシ・カバ・ブーのシシカバブー</td>　<td>逆ガンジー</td> </tr>
+   　<tr><td></td><td>B地下グラフィティー</td>　<td>コール</td>　<td>熊野紅茶館</td>　<td>寮外生フリマ</td>　<td>LAMUコンパ　</td>　 </tr>
+   　<tr><td></td><td>おでかけ</td>　<td>とけいだいせんきょ</td>　<td>進次郎</td>　<td>買い出し</td>　<td>無限BBQ</td>　 </tr>
+   　<tr><td></td><td>コガチを忘れない</td>　<td>握りつぶす</td>　　<td>団血！</td>　<td>エントリーシートを書く</td>　<td>BLACKPINKになる　</td>　 </tr>
+   　<tr><td></td>　<td>ぼくらのあいぞめ「藍」</td>　<td>テアトルKUMANO</td>　<td>おかえり</td>　<td>逆転裁判</td>　<td>クラファン結果発表！！　</td>　 </tr>
+   　<tr><td></td>　<td>チャンダー逆張り</td>　<td>ルンバ放牧</td>　<td>写ルンです</td>　<td>SSKにスマホを捨てさせる</td>　<td>チャンダーランチで得するまでナン食べる　</td>　 </tr>
+   　<tr><td></td><td>居酒屋こたつ</td>　<td>共産カラオケ</td>　<td>京都大学アイマス学部</td>　<td>斎藤幸平ゼミと団結</td>　<td></td>　 </tr>
+   　</table><br>
+    </div>
+   
+   
+   
+   
+   
+   
+   
    <div>
    <a href="#s_top">このページの先頭に戻る</a>
    </div>
@@ -541,15 +578,29 @@
         <p>熊野寮祭２０２１を支援してくださった皆様</p>
       </div>
 
+        <div class="col-lg-8">
+        <div class="card text-white bg-primary mb-3">
+          <img class="card-img-top" src="static/img/chander.jpg">
+          <div class="card-body">
+            <h4 class="card-title">CHANDER</h4>
+            <a href="http://chander-kyoto.com/"  class="list-group-item">公式サイトはこちら</a>
+            <a class="list-group-item">住所：京都府京都市左京区聖護院山王町43-2 パレステート日生ビル B1F</a>
+          </div>
+        </div>
+        </div>
+    
+        <div class="col-lg-8">
         <div class="card text-white bg-primary mb-3">
           <img class="card-img-top" src="static/img/kumanoryo.jpg">
           <div class="card-body">
-            <h4 class="card-title">熊野寮</h4>
-            <a href="https://kumano-ryo.jimdofree.com/"  class="list-group-item">公式サイトはこちら</a>
-            <a href="https://twitter.com/kumanoryo" class="list-group-item">公式Twitterはこちら</a>
+            <h4 class="card-title">吉田チキン</h4>
+            <a href="https://twitter.com/yosidachicken1"  class="list-group-item">公式Twitterはこちら</a>
+            <a class="list-group-item">住所：京都府 京都市左京区吉田本町26</a>
           </div>
         </div>
+        </div>
     
+        
     
     
     

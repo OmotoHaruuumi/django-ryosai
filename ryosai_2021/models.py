@@ -58,7 +58,12 @@ class Post(models.Model):
         return self.title
     
     
+
+
 class Pro(models.Model):
+   
+    
+
    name = models.CharField(
         max_length=50,
         blank=False,
@@ -75,6 +80,7 @@ class Pro(models.Model):
         null=True)
    
    image = models.ImageField(upload_to='images/')
-
+   
+   
    def __str__(self):
         return self.name
