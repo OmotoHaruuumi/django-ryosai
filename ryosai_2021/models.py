@@ -70,7 +70,7 @@ class Pro(models.Model):
         null=True)
    
    body = models.CharField(
-        max_length=100,
+        max_length=150,
         blank=False,
         null=True)
     
@@ -79,8 +79,11 @@ class Pro(models.Model):
         blank=False,
         null=True)
    
-   image = models.ImageField(upload_to='images/')
+   image = models.CharField(
+        max_length=50,
+        blank=False,
+        null=True)
    
    
    def __str__(self):
-        return self.name
+        return str(self.name)
