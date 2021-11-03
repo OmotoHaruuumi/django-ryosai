@@ -8,8 +8,7 @@ class ProResource(resources.ModelResource):
 
     class Meta:
         model = Pro
-        import_id_fields = ('name',)
-        fields = ("name","body","place","image")
+        import_id_fields = ("name","body","place","image")
 
 @admin.register(models.Category)
 class CategoryAdmin(admin.ModelAdmin):
