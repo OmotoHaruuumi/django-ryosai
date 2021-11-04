@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ryosai_2021',
-    'import_export',
 ]
 
 MIDDLEWARE = [
