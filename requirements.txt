@@ -4,4 +4,3 @@ gunicorn
 dj-database-url
 psycopg2
 Pillow
-import-export
