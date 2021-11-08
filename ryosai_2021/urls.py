@@ -1,7 +1,7 @@
 
 from django.urls import path
 
-from .views import  Create , TwentysixView , Index , TwentyeightView, TwentynineView ,TwentysevenView,ThirtyView,ThirtyoneView
+from .views import  Create , TwentysixView , Index , TwentyfiveView,TwentyeightView, TwentynineView ,TwentysevenView,ThirtyView,ThirtyoneView
 from . import  views
 
 
@@ -21,7 +21,9 @@ urlpatterns = [
     
      path('1130/',ThirtyView.as_view(), name="column"),
      
-     path('1131/',ThirtyoneView.as_view(), name="column")
+     path('1131/',ThirtyoneView.as_view(), name="column"),
+     
+      path('1125/',TwentyfiveView.as_view(), name="column")
     
     
 ]

@@ -3,6 +3,8 @@
 from django.views.generic import TemplateView 
 from .models import Post, Pro
 
+class TwentyfiveView(TemplateView):
+    template_name = "1125.html"
 
 class TwentysixView(TemplateView):
     template_name = "1126.html"
