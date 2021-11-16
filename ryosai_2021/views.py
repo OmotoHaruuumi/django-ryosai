@@ -1,7 +1,7 @@
 
 
 from django.views.generic import TemplateView 
-from .models import Post, Pro
+from .models import Post
 
 class TwentyfourView(TemplateView):
     template_name = "1124.html"
@@ -35,10 +35,6 @@ class Index(ListView):
     template_name = "list.html"
     model = Post
     
-    def get_context_data(self, *args, **kwargs):
-        context = super().get_context_data(*args, **kwargs)
-        context['tag_list'] = Pro.objects.all
-        return context
 
 from django.views.generic.edit import CreateView
 from django.urls import reverse_lazy
